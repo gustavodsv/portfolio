@@ -106,6 +106,8 @@ body{
     height: calc(100vh - 134px);
     margin: auto;
 }
+
+/* area foto e nome*/
 .area-avatar {
     display: flex;
     flex-direction: column;
@@ -133,6 +135,8 @@ body{
     display: flex;
     justify-content: center;
 }
+
+/* quem sou */
 .area-content{
     width:800px;
     height: max-content;
@@ -143,59 +147,48 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-.body-aboutme {
+.area-content p {
+    margin: 10px 0px;
 }
+/* habilidade e contato*/
 .footer-aboutme {
     display: flex;
     flex-direction: column;
 }
-.footer-aboutme .skills {
+.footer-aboutme ul {
     margin-top: 20px;
+    list-style: none;
 }
 .footer-aboutme .icons-skills img{
     width: 40px;
     height: 40px;
+    margin-top: 10px;
 }
 .footer-aboutme .contact {
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
-}
-.footer-aboutme .contact .title h4{
-    margin-bottom: 10px;
-}
-.footer-aboutme .contact .title .email {
-    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    
 }
-.footer-aboutme .contact .title .email .endereco {
+.footer-aboutme .contact .title {
     display: flex;
     align-items: center;
-}
-.footer-aboutme .contact a {
-    color: #000;
-    text-decoration: none;
+    justify-content: center;
+    margin-right: 10px;
 }
 .footer-aboutme .contact a img{
     width: 30px;
     height: 30px;
     padding-right: 10px;
 }
-
-.footer-aboutme .contact .icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-}
-.footer-aboutme .contact .icons a img:hover {
+.footer-aboutme .contact a img:hover {
     width: 25px;
     height: 25px;
-    padding-left: 5px;
 }
 
 
-/****************************************************/
+/* rodapé */
 footer {
     width: 100%;
     background-color: #EEE;
@@ -207,27 +200,4 @@ footer {
     margin: auto;
     text-align: center; 
     font-size: 11px;
-}
-
-@media screen and (min-width:800px) and (max-width: 820px){
-    .area-nav li a{
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width:800px) {
-    .area-nav ul {
-        display: none;
-    }
-    .area-nav-mobile {
-        display: block;
-    }
-    .body {
-        max-width: 450px;
-        height: calc(100vh - 150px);
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }    
 }
