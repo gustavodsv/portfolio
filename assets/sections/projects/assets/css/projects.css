@@ -180,20 +180,7 @@ body{
     font-weight: 600;
 }
 /****************************************************/
-footer {
-    width: 100%;
-    background-color: #EEE;
-    border-top:1px solid #CCC ;
-    position: absolute;
-    bottom: 0;
-}
 
-.copy {
-    max-width: 1080px;
-    margin: auto;
-    text-align: center; 
-    font-size: 11px;
-}
 
 @media screen and (min-width:800px) and (max-width:1100px) {
     .area-nav {
@@ -216,9 +203,6 @@ footer {
     }
     .project-info .area-title {
         padding-top: 30px;
-    }
-    .copy {
-        width: 100%;
     }
 
 }
@@ -247,9 +231,6 @@ footer {
     }
     .project-info .area-title {
         padding-top: 30px;
-    }
-    .copy {
-        width: 100%;
     }
 
 
