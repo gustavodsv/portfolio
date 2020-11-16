@@ -97,22 +97,12 @@ body{
 .area-nav li a:hover{
     border: 3px solid #FFF;
 }
-.body {
-    max-width: 1080px;
-    height: calc(100vh - 115px);
-    margin: auto;
+
+
+/*******************corpo*********************/
+.area-aboutme{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-/***********************************************/
-.title {
-    width:1400px;
-    margin:auto;
-}
-.body-content{
-    display: flex;
-    width: 1400px;
+    width: 1080px;
     height: calc(100vh - 134px);
     margin: auto;
 }
@@ -138,55 +128,73 @@ body{
     border-radius: 120px;
     margin: 3px;
 }
-.area-name{
+.name{
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 .area-content{
     width:800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: max-content;
     background-color: #FFF;
     margin-top: 150px;
-    padding: 20px;
-    height: max-content;
     border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
-.area-content h1 {
-    margin-bottom: 30px;
+
+.body-aboutme {
 }
-.area-content p {
+.footer-aboutme {
+    display: flex;
+    flex-direction: column;
+}
+.footer-aboutme .skills {
+    margin-top: 20px;
+}
+.footer-aboutme .icons-skills img{
+    width: 40px;
+    height: 40px;
+}
+.footer-aboutme .contact {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-aboutme .contact .title h4{
     margin-bottom: 10px;
 }
-/*skills*/
-.icon-skills {
-    display: flex;
-    flex-direction: row;
-}
-.icon-skills img{
-    width: 55px;
-    margin: 0px 10px;
-}
-/*contact*/
-.area-contact .icons {
+.footer-aboutme .contact .title .email {
     display: flex;
     justify-content: flex-end;
-    margin-top: 50px;
 }
-.area-contact .icons h4 {
-    line-height: 75px;
+.footer-aboutme .contact .title .email .endereco {
+    display: flex;
+    align-items: center;
 }
-.area-contact  .icons img{
-    width: 35px;
-    height: 35px;
-    margin: 10px;
+.footer-aboutme .contact a {
+    color: #000;
+    text-decoration: none;
 }
-.area-contact .icons img:hover{
+.footer-aboutme .contact a img{
     width: 30px;
     height: 30px;
+    padding-right: 10px;
 }
+
+.footer-aboutme .contact .icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-aboutme .contact .icons a img:hover {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+
 /****************************************************/
 footer {
     width: 100%;
