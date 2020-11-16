@@ -100,28 +100,32 @@ body{
 /***********************************************/
 .body {
     max-width: 1080px;
-    height: calc(100vh - 284px);
+    height: 400px;
     margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 90px;
+    justify-content: space-around;
 }
 
-.area-title h1{ 
+.body .area-title h1{ 
     font-size: 40px;
     color: #FFF;
 }
 .area-projects{
     width: auto;
+    height: 250px;
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: teal;
+    border-radius: 5px;
 }
 .project{
-    width: 320px;
-    height: 200px;
+    width: 300px;
+    height: 180px;
     border-radius: 20px;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin: 20px;
@@ -152,12 +156,13 @@ body{
 .project-info .area-title{
     padding-top: 50px;
 }
-.area-title h1 {
+.area-projects .area-title h1 {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    color: #FFF;
     user-select: none;
     text-shadow: 2px 2px #000;
 }
@@ -173,6 +178,8 @@ footer {
     width: 100%;
     background-color: #EEE;
     border-top:1px solid #CCC ;
+    position: absolute;
+    bottom: 0;
 }
 
 .copy {
