@@ -67,10 +67,70 @@ label[for="bt_menu"]:hover {
     display: none;
 }
 
+/*CORPO DO SITE*/
+.container-body {
+    max-width: 1000px;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 5px;
+}
+.area_texto {
+    background-color: rgb(60, 145, 145);
+    border-radius: 10px ;
+    padding: 20px;
+    color: #f4f7f7;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px #888;
+
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.area_icones {
+    width: 50px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f7f7;
+    border-radius: 50px;
+}
+.area_icones img {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+}
+.area_icones img:hover {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 800px){
     /*AREA MENU ~ MOBILE*/
     #bt_menu:checked ~ .menu{
         margin-left: 0;
+    }
+    #bt_menu:checked ~ label[for="bt_menu"] {
+        border: 2px solid #f4f7f7;
     }
     .menu {
         background-color: #19384d;
@@ -94,3 +154,5 @@ label[for="bt_menu"]:hover {
     }
     
 }
+
+
