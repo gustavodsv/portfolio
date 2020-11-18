@@ -108,7 +108,19 @@ label[for="bt_menu"]:hover {
     padding: 10px;
 }
 
-
+/*RODAPÉ*/
+.area_footer{
+    width: 100%;
+    background-color: #f4f7f7;
+    position: absolute;
+    bottom: 0;
+}
+.footer {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+}
 
 
 
@@ -150,6 +162,7 @@ label[for="bt_menu"]:hover {
     }
     label[for="bt_menu"] {
         display: block;
+        user-select: none;
     }
     
     /* CORPO DO SITE */
@@ -197,6 +210,7 @@ label[for="bt_menu"]:hover {
     }
     label[for="bt_menu"] {
         display: block;
+        user-select: none;
     }
 
 
