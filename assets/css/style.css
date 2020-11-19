@@ -6,12 +6,13 @@
 body{
     background-color: #19384d;
 }
-
+.container {
+    border-bottom: 1px solid teal;
+}
 /*FUNDO MENU*/
 .menu {
     max-width: 100%;
     height: 60px;
-    margin-top: 50px;
     background-color: #5da0a2;
 }
 /*CORPO MENU*/
@@ -45,32 +46,35 @@ body{
     border: 2px solid #f4f7f7;
 }
 /*AREA BOTÃO ~ MOBILE*/
-label[for="bt_menu"] {
+ label[for="bt_menu"] {
     display: none;
-    text-align: center;
+    text-align: end;
     cursor: pointer;
 
-    color: #f4f7f7;
-    font-size: 30px;
+    color: #FFF;
+    font-size: 60px;
     
-    width: 39px;
-    height: 40px;
-    padding: 5px;
-    border: 2px solid rgba(0, 0, 0, 0);
+    width: 95vw;
+    height: 80px;
+    padding-right: 10vw;
     
-    margin: 10px 0px 2px 18px;
+    background-color: #19384d;
+    position:fixed;
 }
-label[for="bt_menu"]:hover {
-    border: 2px solid #f4f7f7;
-}
+
 #bt_menu{
     display: none;
-}
+    flex: right;
+} 
+
+
+
+
 
 /*CORPO DO SITE*/
 .container-body {
-    max-width: 1000px;
-    height: calc(100vh - 200px);
+    max-width: 934px;
+    height: 1024px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -108,23 +112,51 @@ label[for="bt_menu"]:hover {
     padding: 10px;
 }
 
-/*RODAPÉ*/
-.area_footer{
-    width: 100%;
-    background-color: #f4f7f7;
-    position: absolute;
-    bottom: 0;
-}
-.footer {
-    width: auto;
+/*SOBRE MIM*/
+/*CORPO DO SITE*/
+.area_aboutme{
+    display: flex;
+    width: 90vw;
+    height: 943px;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin: auto;
-    text-align: center;
-    font-size: 10px;
 }
 
+/* area foto e nome*/
+.area_avatar {
+    margin: 0px auto;
+    padding-top: 20px;
+}
+.area_avatar img{
+    width: 200px;
+    border: 4px solid teal;
+    border-radius: 100px;
+}
 
-
-
+/* quem sou */
+.area-content{
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+.area-content p {
+    margin: 10px 0px;
+}
+/* habilidade e contato*/
+.footer-aboutme ul {
+    margin-top: 20px;
+    list-style: none;
+    font-size: 15px;
+}
+.footer-aboutme .icons-skills img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
 
 
 
@@ -134,17 +166,14 @@ label[for="bt_menu"]:hover {
     #bt_menu:checked ~ .menu{
         margin-left: 0;
     }
-    #bt_menu:checked ~ label[for="bt_menu"] {
-        border: 2px solid #f4f7f7;
-    }
     .menu {
         width: 100%;
-        height: 100%;
-        margin-top: 5px;
+        height: calc(100vh - 100px);
+        margin-top: 80px;
         margin-left: -100%;
         transition: all .3s;
-        position: absolute;
         padding-top: 20px;
+        position: fixed;
     }
     .area_menu ul li{
         width: 100%;
@@ -182,17 +211,15 @@ label[for="bt_menu"]:hover {
     #bt_menu:checked ~ .menu{
         margin-left: 0;
     }
-    #bt_menu:checked ~ label[for="bt_menu"] {
-        border: 2px solid #f4f7f7;
-    }
+
     .menu {
         width: 100%;
-        height: 100%;
-        margin-top: 5px;
+        height: calc(100vh - 100px);
+        margin-top: 80px;
         margin-left: -100%;
         transition: all .3s;
-        position: absolute;
         padding-top: 20px;
+        position: fixed;
     }
     .area_menu ul li{
         width: 100%;
