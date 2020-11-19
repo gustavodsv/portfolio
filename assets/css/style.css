@@ -73,8 +73,8 @@ body{
 
 /*CORPO DO SITE*/
 .container-body {
-    max-width: 934px;
-    height: 1024px;
+    max-width: 1000px;
+    height: 820px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -117,7 +117,7 @@ body{
 .area_aboutme{
     display: flex;
     width: 90vw;
-    height: 943px;
+    height: 880px;
     flex-direction: column;
     justify-content: space-evenly;
     margin: auto;
@@ -197,12 +197,17 @@ body{
     /* CORPO DO SITE */
     .container-body {
         flex-direction: column;
+        height: 1020px;
     }
     .area_icones {
         flex-direction: row;
         width: 185px;
         height: 50px;
         padding: 0px 15px;
+    }
+    /*SOBRE MIM*/
+    .area_aboutme {
+        height: 943px;
     }
 }
 
@@ -244,6 +249,7 @@ body{
     /* CORPO DO SITE */
     .container-body {
         flex-direction: column;
+        height: 1020px;
     }
     .area_texto {
         width: 240px;
@@ -256,5 +262,8 @@ body{
         height: 50px;
         padding: 0px 15px;
     }
-
+    /*SOBRE MIM*/
+    .area_aboutme {
+        height: 943px;
+    }
 }
