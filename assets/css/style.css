@@ -369,10 +369,12 @@ body{
         justify-content: space-between;
         height: 710px;
         padding-bottom: 20px;
-    }.area_projetos .area-title-projects {
+    }
+    .area_projetos .area-title-projects {
         font-size: 30px;
     }
     .project {
         width: 280px;
         height: 170px;
+    }
 }
